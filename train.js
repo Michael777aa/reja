@@ -59,3 +59,4 @@ shop.qabul('cola', 4);
 console.log(shop.qoldiq()); 
 
 console.log(shop.getLog()); 
+// salom
