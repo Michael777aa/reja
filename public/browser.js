@@ -12,24 +12,25 @@ function itemTemplate(item) {
 }
 
 let createField = document.getElementById("create-field");
+
 document
 .getElementById("create-form")
 .addEventListener("submit", function (e) {
     e.preventDefault();
+    console.log(e);
 
-
-axios
+axios 
     .post("/create-item", {reja: createField.value})
     .then((response) => {
-        document.getElementById("item-list").insertAdjacentHTML("beforeend", itemTemplate(response.data))
-        createField.value = "";
+        document.getElementById("item-list").insertAdjacentHTML("beforeend", itemTemplate(response.data));
+        createField.value = "";     
         createField.focus();
     })
     .catch((err) => {
         console.log("Iltimos qaytadan harakat qiling! ");
     });
 
-});
+}); 
 
 document.addEventListener("click", function(e) {
     // delete oper
@@ -41,6 +42,7 @@ document.addEventListener("click", function(e) {
         .then((response) => {
             console.log(response.data);
             e.target.parentElement.parentElement.remove();
+            
         })
         .catch((err) => {
             console.log("Iltimos qaytadan harakat qiling!");

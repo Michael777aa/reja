@@ -17,13 +17,13 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-
+ 
 // 2 : Session code
 // 3 Views code
 app.set("views", "views");
 app.set("view engine", "ejs");
 
-
+ 
 // 4 Routing code
 app.post("/create-item", (req, res) =>{
     console.log('user entered /create-item');
@@ -34,7 +34,7 @@ app.post("/create-item", (req, res) =>{
        res.json(data.ops[0]);
     })
     
-});
+}); 
 
 app.post("/delete-item",(req, res) => {
 const id = req.body.id;
