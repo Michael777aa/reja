@@ -47,11 +47,11 @@ app.post("/edit-item", (req,res) => {
     const data = req.body;
     console.log(data);
     db.collection("plans").findOneAndUpdate({
-        id:  new mongodb.ObjectId(data.id)},
+        id: new mongodb.ObjectId(data.id)},
          {$set: {reja: data.new_input}},
          function (err, data) {
         res.json({state: "success" })
-    })
+            });
   
 })
 

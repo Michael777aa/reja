@@ -4,9 +4,18 @@
 
 
 function similarString(a, b) {
-  if(a.length === b.length){
-    console.log(true);
-  }else{console.log(false);}
+
+if(a.length !== b.length) {
+  return false;
 }
 
-similarString("salom", "molas");
+const sortA = a.split('').sort().join('');
+const sortB = b.split('').sort().join('');
+
+return sortA === sortB;
+
+
+}
+  
+const result = similarString("hello", "");
+console.log(result);

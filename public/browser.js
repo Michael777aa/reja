@@ -1,4 +1,4 @@
-const { response } = require("../app");
+// const { response } = require("../app");
 
 console.log("FrontEnd JS ishga tushdi");
 
@@ -19,7 +19,7 @@ document
 .getElementById("create-form")
 .addEventListener("submit", function (e) {
     e.preventDefault();
-    console.log(e);
+    
 
 axios 
     .post("/create-item", {reja: createField.value})
@@ -54,23 +54,29 @@ document.addEventListener("click", function(e) {
     }
 
     // edit oper
-    if(e.target.classList.contains("edit-me")) {
-      let userInput = prompt("Ozgartirish kriting",
-       e.target.parentElement.parentElement.querySelector(".item-text").innerHTMl);
-      if(userInput){
-        axios.post("/edit-item", 
-        {id: e.target.getAttribute("data-id"),
-         new_input: userInput})
-         .then(response => {
-            console.log(response.data);
-            e.target.parentElement.parentElement.querySelector(".item-text").innerHTMl = userInput;
-         })
-         .catch(err => {
-            console.log("Iltimos qaytadan harakat qiling!");
-         })
+    if (e.target.classList.contains("edit-me")) {
+        let userInput = prompt(
+          "Make update",
+          e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+        );
+        if (userInput) {
+          axios
+            .post("/edit-item", {
+              id: e.target.getAttribute("data-id"),
+              new_input: userInput,
+            })
+            .then((response) => {
+              console.log(response.data);
+              e.target.parentElement.parentElement.querySelector(
+                ".item-text"
+              ).innerHTML = userInput;
+            })
+            .catch((err) => {
+              console.log("PLease try again!");
+            });
+        }
       }
-    }
-});
+    });
 
 
 document.getElementById("clean-all").addEventListener("click", function() {
