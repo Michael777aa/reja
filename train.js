@@ -9,13 +9,10 @@ if(a.length !== b.length) {
   return false;
 }
 
-const sortA = a.split('').sort().join('');
-const sortB = b.split('').sort().join('');
 
-return sortA === sortB;
 
 
 }
   
-const result = similarString("hello", "");
+const result = similarString( "eolhl", "hello");
 console.log(result);

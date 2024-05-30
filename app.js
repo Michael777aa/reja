@@ -43,16 +43,23 @@ db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, function (err,
 })
 });
 
-app.post("/edit-item", (req,res) => {
+// app.post("/edit-item", (req,res) => {
+//     const data = req.body;
+//     console.log(data);
+//     db.collection("plans").findOneAndUpdate({
+//         id: new mongodb.ObjectId(data.id)},
+//          {$set: {reja: data.new_input}},
+//          function (err, data) {
+//         res.json({state: "success" })
+//             });
+  
+// })
+app.post("/edit-item", (req, res) => {
     const data = req.body;
     console.log(data);
-    db.collection("plans").findOneAndUpdate({
-        id: new mongodb.ObjectId(data.id)},
-         {$set: {reja: data.new_input}},
-         function (err, data) {
-        res.json({state: "success" })
-            });
-  
+    db.collection("plans").findOneAndUpdate({_id: new mongodb.ObjectId(data.id)}, {$set: {reja: data.new_input}}, function(err,data) {
+        res.json({state: "success"});
+    })
 })
 
 app.post("/delete-all", (req, res) => {
