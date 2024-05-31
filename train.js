@@ -1,18 +1,17 @@
-// D-TASK: 
-// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
-// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+// E-TASK: 
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
 
 
-function similarString(a, b) {
 
-if(a.length !== b.length) {
-  return false;
+function qaytarish(a) {
+  let reverseA = '';
+  for (let i = a.length - 1; i >= 0; i--) {
+    reverseA += a[i];
+  }
+  return reverseA;
 }
 
 
-
-
-}
-  
-const result = similarString( "eolhl", "hello");
-console.log(result);
+console.log(qaytarish("hello"));
