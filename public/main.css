@@ -1,0 +1,384 @@
+
+
+
+
+.frame{
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.main_frame{
+    position: relative;
+    width: 1440px;
+    height: 1312px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2px;
+    background: #F0F0F6;
+} 
+
+.main_frame .left_frame{
+    position: relative;
+    width: 305px;
+    height: 1315px;
+    background-color: white;
+}
+.main_frame .midd_frame{
+    position: relative;
+    width: 970px;
+    height: 1259px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.main_frame .right_frame{
+    position: relative;
+    width: 108px;
+    height: 1315px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_frame .left_1{
+    position: relative;
+    width: 228px;
+    height: 267px;
+    margin-top: 50px;
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    
+}
+.main_frame .left_1 .left_1-1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 156.16px;
+    height: 142.53px;
+    margin-bottom: 29.46px;
+
+    
+}
+.main_frame .left_1 .left_1-2{
+    position: relative;
+    width: 66.63px;
+    height: 20.9px;
+    margin-bottom: 6.65px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: #2B2B2B;
+}
+
+
+
+
+
+.main_frame .left_frame .left_1-3{
+    position: relative;
+    width: 147.84px;
+    height: 25.65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* paragraph progress */
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+
+    /* paragraph Font */
+    color: #767676;
+}
+
+
+.left-icons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 238px;
+    margin-top: 19px;
+}
+.link_href{
+    text-decoration: none;
+    color: black;
+
+}
+.icon{
+    position: relative;
+    width: 24.99px;
+    height: 22.8px;
+    border-radius: 50%;
+    filter: drop-shadow(0  4px 4px rgba(0,0,0,.25));
+    background: #FFB400;
+}
+
+.main_frame .left_frame .left_4{
+    position: relative;
+    width: 220px;
+    height: 252px;
+    margin-top: 25px;
+    margin-left: 45px;
+    
+
+}
+.main_frame .left_frame .left_5{
+    position: relative;
+    width: 186px;
+    height: 148px;
+    margin-top: 25px;
+    margin-left: 45px;
+    
+
+}
+
+.main_frame .left_2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 221px;
+    height: 126px;
+    margin-left: 44px;
+    
+}
+
+/* Residence */
+
+.left_about-main{
+    /* Residence */
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+.left_about-main__left{
+    background-color: #FFB400;
+    padding: 5px 8px;
+    position: relative;
+    
+   
+}
+
+
+.middle_about-main{
+    /* Freelance */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 8px;
+
+
+}
+.middle_about-main__left{
+    background-color: #FFB400;
+    padding: 5px 8px;
+   
+}
+
+.bottom_about-main{
+    /* Address */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 16px;
+
+
+}
+.bottom_about-main__left{
+   
+    
+    background-color: #FFB400;
+    padding: 5px 8px;
+}
+
+
+
+.marginer{
+    /* Line 6 */
+
+width: 220px;
+height: 0px;
+
+/* Background */
+border: 1.5px solid #F0F0F6;
+display: flex;
+flex-direction: column;
+position: relative;
+left: 40px;
+/* Inside auto layout */
+margin: 25px 0 ;
+
+}
+
+.left_3{
+    position: relative;
+    left: 50px;
+}
+.bangle-lang{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_3 h4{
+    font-weight: 350;
+
+}
+
+.extra-skills{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    
+    
+}
+.extra-skills img{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.extra-skills div{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.top-middle__frame{
+    padding: 0 5%;
+}
+
+.top-middle__frame h1{
+    font-size: 55px;
+    font-weight: 700;
+   
+}
+.top-middle__frame p{
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+.top-middle__frame button{
+    padding: 9px 22px ;
+    border-radius: 4px;
+    border: none;
+    background-color: #ffb300;
+    color: black;
+    position: relative;
+    top: 10px;
+    
+}
+
+.top-middle__frame{
+    display: flex;
+    background-color:  #fff;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+    top: -27px;
+   
+}
+.midd_frame img{
+    width: 300px;
+    height: auto;
+    position: relative;
+    top: 10px;
+}
+
+.my-service{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.my-service-text{
+    font: 20px;
+    font-weight: 300px;
+    text-align: center;
+    line-height: 1.6;
+}
+.center-service{
+    position:relative;
+    top: 60px;
+}
+.bottom-middle__frame{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: 110px;
+}
+.items{
+    background-color: #fff;
+    width: 390px;
+    height: auto;
+    text-align: center;
+    
+
+    
+}
+.items img{
+    width: 100px;
+    height: auto;
+}
+.items-2 h4{
+    font-size: 16px;
+}
+.items-2 p{
+    line-height: 1.4;
+    font-weight: 300;
+    padding: 8px;
+
+}
+.items-2 a{
+    text-decoration: none;
+    color: #FFB400;
+    
+}
+
+.right-side_6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 200px;
+    gap: 20px;
+}
+.top-image__right{
+    position: relative;
+    top: 30px;
+}
+/* Home One page- Light */
+

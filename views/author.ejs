@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <title>Portfolio</title>
+</head>
+
+
+<body>
+    <div class="frame">
+        <div class="main_frame">
+            <div class="left_frame">
+                <div class="left_1">
+                    <div class="left_1-1">
+                        <img src="images/profile.png" alt="" width="156px" 
+                        height="142px">
+                    </div>
+                    <div class="left_1-2"><%=user.name%></div>          
+                    <div class="left_1-3"><%=user.profesion%></div>
+                    
+                    <div class="left-icons">
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/Dribbble.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/Facebook.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/Instagram.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/Linkeding.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/Twitter.svg" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img class="icon-1" src="icon/Youtube.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_2">
+                    <div class="left_about-main">
+                        <div class="left_about-main__left">Residence:</div>
+                        <div class="left_about-main__right"><%=user.residence%></div>
+                    </div>
+                    <div class="middle_about-main">
+                        <div class="middle_about-main__left">Freelance:</div>
+                        <div class="middle_about-main__right"><span>Available</span></div>
+                    </div>    
+                    <div class="bottom_about-main">
+                        <div class="bottom_about-main__left">Address:</div>
+                        <div class="bottom_about-main__right"><%=user.address%></div>
+                    </div>              
+                   
+                    </div>
+                    <div class="marginer"></div>
+                    <div class="left_3">
+                        <div><h3>Languages</h3></div>
+                        <div class="bangle-lang">
+                          <span><%=user.languages[0]%></span>
+                          <span>100%</span>      
+                        </div>
+                        <img src="images/bangla_line.png" alt="">
+                        <div class="bangle-lang">
+                            <span><%=user.languages[1]%></span>
+                            <span>80%</span>      
+                          </div>
+                          <img src="images/english_line.png" alt="">
+                          <div class="bangle-lang">
+                            <span><%=user.languages[2]%></span>
+                            <span>60%</span>      
+                          </div>
+                          <img src="images/spanish_line.png" alt="">
+                    </div>
+
+                    <div class="marginer"></div>
+
+                    <div class="left_3">
+                        <div><h3>Skills</h3></div>
+                        <div class="bangle-lang">
+                          <span><%=user.skills[0]%></span>
+                          <span>90%</span>      
+                        </div>
+                        <img src="images/html_line.png" alt="">
+                        <div class="bangle-lang">
+                            <span><%=user.skills[1]%></span>
+                            <span>85%</span>      
+                          </div>
+                          <img src="images/css_line.png" alt="">
+                          <div class="bangle-lang">
+                            <span><%=user.skills[2]%></span>
+                            <span>80%</span>      
+                          </div>
+                          <img src="images/js_line.png" alt="">
+                          <div class="bangle-lang">
+                            <span><%=user.skills[3]%></span>
+                            <span>75%</span>      
+                          </div>
+                          <img src="images/php_line.png" alt="">
+                          <div class="bangle-lang">
+                            <span><%=user.skills[4]%></span>
+                            <span>85%</span>      
+                          </div>
+                          <img src="images/wordPress_line.png" alt="">
+                    </div>
+
+                    <div class="marginer"></div>
+                    <div class="left_3">
+                        <div><h3>Extra Skills</h3></div>
+                        <div class="extra-skills">
+                           <img src="images/extra_skill_icon.png" alt="">
+                          <div><%=user.extra_skills[0]%></div>
+                           
+                        </div>
+                        <div class="extra-skills">
+                            <img src="images/extra_skill_icon.png" alt="">
+                           <div><%=user.extra_skills[1]%></div>
+                            
+                         </div>
+                         <div class="extra-skills">
+                            <img src="images/extra_skill_icon.png" alt="">
+                           <div><%=user.extra_skills[2]%></div>
+                            
+                         </div>
+                         <div class="extra-skills">
+                            <img src="images/extra_skill_icon.png" alt="">
+                           <div><%=user.extra_skills[3]%></div>
+                            
+                         </div>
+
+                         
+                       
+                    </div>
+                    <div class="marginer"></div>
+                    
+                   
+
+                </div>
+
+                <div class="midd_frame">
+                    <div class="top-middle__frame">
+                        <div class="inside-top">
+                            <h1>Doctor neurologist <br> in OHSU Hospital</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Aperiam voluptates asperiores nemo! <br> Natoque retrum Semper Sed Suspendise Nunc Lectus.</p>
+                        <button>HIRE ME </button>
+                        </div>
+                        <div class="imageee"> <img src="images/profile.png" alt=""></div>
+                   
+                  
+                    </div>
+                  
+                  <div class="center-service">
+                    <h1 class="my-service">My Services</h1>
+                    <p class="my-service-text">
+                        <%=user.service_desc%>
+
+                    </p>
+                  </div>
+
+                  <div class="bottom-middle__frame">
+                    <div class="items">
+                        <img src="images/middle_bottom/coding.png" alt="">
+                        <h4>Web Development</h4>
+                        <p>Blog, E-Commerce</p>
+                    </div>
+                    <div class="items">
+                        <img src="images/middle_bottom/illustration.png" alt="">
+                        <h4>UI/UX Design</h4>
+                        <p>Mobile App, Website Design</p>
+                    </div>
+                    <div class="items">
+                        <img src="images/middle_bottom/Microphone.png" alt="">
+                        <h4>Sound design</h4>
+                        <p>Voice Over, Beat Making</p>
+                    </div>
+                    
+
+                  </div>
+                  <br>
+                  <div class="bottom-middle__frame">
+                    <div class="items">
+                        <img src="images/middle_bottom/game-development.png" alt="">
+                        <h4>Game Design</h4>
+                        <p>Character Design, Props, & Objects</p>
+                    </div>
+                    <div class="items">
+                        <img src="images/middle_bottom/Photographer.png" alt="">
+                        <h4>Photography</h4>
+                        <p>Portrait, Product Photography</p>
+                    </div>
+                    <div class="items items-2">
+                        <h4>Advertising</h4>
+                      
+                       <p>Lorem Ipsum Dolor Sit Amet, Consencetur Adidiscing elit. Vitae Nulla Diam In Ac Dictum A urna viverra Morbi.</p>
+
+                       <a href="">ORDER NOW</a><br><br>
+                    </div>
+                    
+
+                  </div>
+                    
+                </div>
+               
+                
+                <div class="right_frame">
+
+                    <div class="top-image__right"><img src="images/right side/Contrast.png" alt=""></div>
+
+                    <div class="right-side_6">
+                        <div class="icon-right"><img src="images/right side/Home.png" alt=""></div>
+                        <div class="icon-right"><img src="images/right side/Service.png" alt=""></div>
+                        <div class="icon-right"><img src="images/right side/Cv.png" alt=""></div>
+                        <div class="icon-right"><img src="images/right side/Portfolio.png" alt=""></div>
+                        <div class="icon-right"><img src="images/right side/Blog.png" alt=""></div>
+                        <div class="icon-right"><img src="images/right side/Contact.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>
